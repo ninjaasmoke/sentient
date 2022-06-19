@@ -1,1 +1,1 @@
-# sentienn
+# sentient

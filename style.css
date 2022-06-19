@@ -1,0 +1,91 @@
+:root {
+    --color-primary: #3fa4fd;
+    --color-background: black;
+    --color-background-secondary: #21262d;
+    --color-text: white;
+    --color-text-secondary: #89929b;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: var(--color-background);
+    color: var(--color-text);
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 2rem 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.meaning {
+    font-family: 'Helvetica 55 Roman', sans-serif;
+    font-style: italic;
+    color: var(--color-text-secondary);
+    font-size: 14px;
+}
+
+main {
+    margin: 60px 0;
+    padding: 40px 0;
+    width: 100%;
+    border-top: 1px solid var(--color-background-secondary);
+}
+
+.explain {
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+#question {
+    border: 1px solid var(--color-background-secondary);
+    color: var(--color-text);
+    outline: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    background-color: var(--color-background);
+    font-family: 'Helvetica 65 Medium', sans-serif;
+
+    width: 100%;
+
+    margin-bottom: 20px;
+}
+
+.ask {
+    all: unset;
+    font-family: 'Helvetica Neue', sans-serif;
+    padding: 12px 24px;
+    border-radius: 4px;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    font-size: 14px;
+    cursor: pointer;
+    transition-duration: 200ms;
+}
+
+.ask:hover {
+    text-decoration: underline;
+}
+
+.answer-heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+}
