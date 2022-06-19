@@ -18,4 +18,7 @@ button.addEventListener("click", function() {
     question = question.replace(/[Aa]re\s[Yy]ou\s\(.*\)/, "");
 
     console.log(question.replace(/[Aa]re\s[Yy]ou\s\(.*\)/g, ""));
+
+    //  update the answer
+    output.innerHTML = "Answer: Omg you moron! Did you actually think it would work?";
 });
